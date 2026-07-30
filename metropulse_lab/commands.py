@@ -180,10 +180,14 @@ def _run_step(args, command: str, method_name: str,
     with RunLease(run_dir, command):
         state.require_state(ctx.control, run_id, command)
         report = getattr(incident, method_name)(ctx)
-        state.advance(ctx.control, run_id, command, ctx.clock.now())
-        if snapshot_after:
-            _snapshot(ctx, snapshot_after)
-        _write_run_json(ctx, state.RESULTING_STATE[command])
+        step_succeeded = not (
+            command == "recover" and report.status != "recovered"
+        )
+        if step_succeeded:
+            state.advance(ctx.control, run_id, command, ctx.clock.now())
+            if snapshot_after:
+                _snapshot(ctx, snapshot_after)
+            _write_run_json(ctx, state.RESULTING_STATE[command])
         result = report.to_dict()
     ctx.close()
     exit_code = _exit_for(command, report)
@@ -196,6 +200,8 @@ def _exit_for(command: str, report) -> int:
         return config.EXIT_DETECTED
     if command == "verify":
         return config.EXIT_OK if report.status == "PASS" else config.EXIT_VERIFY_FAILED
+    if command == "recover" and report.status != "recovered":
+        return config.EXIT_VERIFY_FAILED
     if command in ("inject",) and report.status.endswith("failed"):
         return config.EXIT_INTERNAL
     return config.EXIT_OK

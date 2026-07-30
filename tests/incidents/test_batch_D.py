@@ -13,7 +13,8 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from metropulse_lab import commands
+from metropulse_lab import commands, db
+from metropulse_lab.context import RunContext
 from metropulse_lab.reference import reference_lifecycle
 
 # Mechanism / root-cause vocabulary that must NOT appear in an incident's
@@ -94,6 +95,74 @@ class BatchDMetadataTests(unittest.TestCase):
             self.assertEqual(meta.recovery_mode, "REPLAY")
             self.assertEqual(len(meta.expected_detection_ids), 2,
                              f"{incident_id} should expose a data and a control detection id")
+
+
+class MP16RecoverySafetyTests(unittest.TestCase):
+    def test_missing_referenced_lookup_key_blocks_recovery_and_verification(self):
+        with tempfile.TemporaryDirectory() as ws:
+            created = commands.create(commands._Args(incident="MP-16", workspace=ws))
+            run_id = created["data"]["run_id"]
+            step = commands._Args(run=run_id, workspace=ws)
+            commands.inject(step)
+            commands.run(step)
+            commands.detect(step)
+            commands.evidence(step)
+            commands.contain(step)
+            commands.repair(step)
+
+            run_dir = Path(ws) / "runs" / run_id
+            ctx = RunContext(run_id, "MP-16", run_dir, Path(ws))
+            incident = commands.registry.load("MP-16")
+            full_boardings = db.scalar(
+                ctx.warehouse,
+                "SELECT SUM(passenger_count) FROM fct_station_gate_count "
+                "WHERE route_id IS NOT NULL",
+            )
+            with db.transaction(ctx.warehouse):
+                ctx.warehouse.execute(
+                    "DELETE FROM mp16_lookup WHERE station_id = ?",
+                    ("STN_004",),
+                )
+            joined_boardings = db.scalar(
+                ctx.warehouse,
+                "SELECT SUM(g.passenger_count) "
+                "FROM fct_station_gate_count g "
+                "JOIN mp16_lookup l ON g.station_id = l.station_id "
+                "WHERE g.route_id IS NOT NULL",
+            )
+            ctx.close()
+
+            recovery = commands.recover(step)
+            ctx = RunContext(run_id, "MP-16", run_dir, Path(ws))
+            verification = incident.verify(ctx)
+
+            self.assertEqual(full_boardings - joined_boardings, 90)
+            self.assertFalse(recovery["ok"])
+            self.assertEqual(recovery["data"]["status"], "recovery_blocked")
+            self.assertEqual(
+                recovery["data"]["fields"]["unmapped_station_ids"],
+                ["STN_004"],
+            )
+            self.assertEqual(
+                db.scalar(
+                    ctx.control,
+                    "SELECT lifecycle_state FROM pipeline_run WHERE run_id = ?",
+                    (run_id,),
+                ),
+                "REPAIRED",
+            )
+            self.assertEqual(
+                db.scalar(ctx.warehouse, "SELECT COUNT(*) FROM mp16_zone_result"),
+                0,
+            )
+            mapping = next(
+                a for a in verification.assertions
+                if a.assertion_id == "MP-16-VER-MAPPING"
+            )
+            self.assertEqual(mapping.actual, ["STN_004"])
+            self.assertEqual(mapping.status, "FAIL")
+            self.assertEqual(verification.status, "FAIL")
+            ctx.close()
 
 
 if __name__ == "__main__":

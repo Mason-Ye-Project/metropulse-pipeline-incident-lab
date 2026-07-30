@@ -101,6 +101,19 @@ class MP16Incident:
         result = guard.evaluate(distinct_keys, BYTES_PER_ROW)
         return {"result": result, "distinct_keys": distinct_keys}
 
+    def _unmapped_station_ids(self, ctx: RunContext) -> list[str]:
+        """Return referenced station keys that lack exactly one lookup row."""
+        rows = db.query(
+            ctx.warehouse,
+            "SELECT r.station_id AS station_id "
+            "FROM (SELECT DISTINCT station_id FROM fct_station_gate_count) r "
+            "LEFT JOIN mp16_lookup l ON r.station_id = l.station_id "
+            "GROUP BY r.station_id "
+            "HAVING COUNT(l.station_id) <> 1 OR COUNT(DISTINCT l.zone_code) <> 1 "
+            "ORDER BY r.station_id",
+        )
+        return [str(row["station_id"]) for row in rows]
+
     def _faulty_projection(self) -> int:
         return N_STATIONS * EXPANDED_WINDOWS
 
@@ -319,6 +332,44 @@ class MP16Incident:
     def recover(self, ctx: RunContext) -> StepReport:
         conn = ctx.warehouse
         pub = f"PUB-{ctx.run_id}-recover"
+        unmapped_station_ids = self._unmapped_station_ids(ctx)
+        if unmapped_station_ids:
+            manifest = {
+                "mode": "REPLAY",
+                "publication_id": None,
+                "dataset_version_id": None,
+                "scope": {"datasets": [RECOVERY_DATASET], "keys": "distinct station keys only"},
+                "write_mode": "no_write",
+                "status": "recovery_blocked",
+                "reason": "referenced station keys must map to exactly one zone before replay",
+                "unmapped_station_ids": unmapped_station_ids,
+                "evidence_origin": common.EVIDENCE_ORIGIN,
+            }
+            write_json(ctx.paths.report_path("recovery.json"), manifest)
+            ctx.log.emit(
+                logical_time=ctx.clock.tick(),
+                component="recovery",
+                event_type="replay_blocked",
+                fields={"unmapped_station_ids": unmapped_station_ids},
+            )
+            return StepReport(
+                "recover",
+                "MP-16",
+                ctx.run_id,
+                "recovery_blocked",
+                fields=manifest,
+                assertions=[
+                    Assertion(
+                        "MP-16-REC-MAPPING",
+                        "completeness",
+                        "every referenced station maps to exactly one zone before replay",
+                        expected=[],
+                        actual=unmapped_station_ids,
+                        status="FAIL",
+                    )
+                ],
+            )
+
         # REPLAY via the set-based join over the distinct station keys.
         rows = db.query(conn,
             "SELECT l.zone_code AS zone_code, SUM(g.passenger_count) AS boardings "
@@ -356,6 +407,14 @@ class MP16Incident:
     def verify(self, ctx: RunContext) -> StepReport:
         conn = ctx.warehouse
         assertions: list[Assertion] = []
+
+        unmapped_station_ids = self._unmapped_station_ids(ctx)
+        assertions.append(Assertion(
+            "MP-16-VER-MAPPING", "completeness",
+            "every referenced station maps to exactly one zone",
+            expected=[], actual=unmapped_station_ids,
+            status="PASS" if not unmapped_station_ids else "FAIL",
+            evidence="reports/verification.json"))
 
         reference = {r["zone_code"]: r["boardings"] for r in db.query(conn,
             "SELECT l.zone_code AS zone_code, SUM(g.passenger_count) AS boardings "
