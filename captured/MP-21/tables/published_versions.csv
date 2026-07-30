@@ -1,0 +1,4 @@
+dataset_name,version_label,manifest_id,state,ref_count,is_current
+station_feed_snapshot,v1,MAN-station_feed-v1,PUBLISHED,2,0
+station_feed_snapshot,v2,MAN-station_feed-v2,PUBLISHED,2,0
+station_feed_snapshot,v3,MAN-station_feed-v3,PUBLISHED,2,1

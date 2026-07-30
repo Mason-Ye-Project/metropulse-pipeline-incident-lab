@@ -1,0 +1,5 @@
+route_id,registry_version,display_code,mode,active_flag
+R1,1,B01,bus,1
+R2,1,B02,bus,1
+R3,1,R03,rail,1
+R4,1,R04,rail,1

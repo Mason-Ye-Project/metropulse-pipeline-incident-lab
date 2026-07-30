@@ -1,0 +1,3 @@
+check_id,scope_key,dimension,expected,actual,status
+MP-11-OWNER-001,all,control_consistency,"a single owner issues requests within a bounded, spaced ceiling",3 independent owners; ceiling absent,FAIL
+MP-11-RATE-001,all,completeness,station-status collected for all 12 stations within the observed baseline of 36 requests,0/12 stations collected after 324 requests (worst station 27),FAIL

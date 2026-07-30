@@ -1,0 +1,2 @@
+observed_path,event_rows,requests_issued,cost_units,distinct_station_keys,request_budget,requests_per_key
+one_request_each_event,216,216,216,12,12,18

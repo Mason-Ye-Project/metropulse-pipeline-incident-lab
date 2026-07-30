@@ -1,0 +1,43 @@
+{
+  "artifacts": {
+    "alert.json": {
+      "bytes": 887,
+      "sha256": "9ef7badbe87496702b2b9ee15b33ab65d18a896f3c13ba6584207702fa52fd53"
+    },
+    "lineage.json": {
+      "bytes": 299,
+      "sha256": "0a9aba35fdf21e9e65368e6c0f5734305b4ec60382b3dbe5ec7c58c22344ca4b"
+    },
+    "tables/counter_conservation.csv": {
+      "bytes": 702,
+      "sha256": "aec60daa0e638fb919e8d86b1aa4faaa1bc9167823e53d5ed309dc1a66985bfa"
+    },
+    "tables/input_manifest.csv": {
+      "bytes": 714,
+      "sha256": "0e04b72914da08b579c5c4de15c4a0a1243049be54b7752cc296787b68bcc2b0"
+    },
+    "tables/quality_results.csv": {
+      "bytes": 535,
+      "sha256": "05cbc07df25e70bfa9a439ab8266493862ac3da63ddba7b49c3d929925618b67"
+    },
+    "tables/ridership_vs_gate.csv": {
+      "bytes": 2324,
+      "sha256": "a8e2bb97202afff45e56d3ee506c641ae94a1c7a3b93bd384a9fb1aea29696b5"
+    },
+    "tables/row_counts.csv": {
+      "bytes": 115,
+      "sha256": "b371b934dce5ebf67029350d7cb9e907b5ecd3e4c948866d34cc18ff5862a9a3"
+    },
+    "tables/vehicle_counter_readings.csv": {
+      "bytes": 14538,
+      "sha256": "7fd9e998dcced01a9d7645f4fe930c0723b836f0487f1785936f98e6cb07f721"
+    },
+    "timeline.json": {
+      "bytes": 3692,
+      "sha256": "58df20ace8a6e5a090446d34bdabdae2c62ffe3f838fce6cca9b3be7743d5084"
+    }
+  },
+  "description": "Evidence pack. Symptom and facts only; no root-cause label.",
+  "incident_id": "MP-01",
+  "run_id": "run-mp01-0001"
+}

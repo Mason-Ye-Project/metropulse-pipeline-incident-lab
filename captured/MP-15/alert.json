@@ -1,0 +1,14 @@
+{
+  "affected_product": "station aggregate tasks",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values produced by a deterministic simulator, not a real transit agency or a real incident.",
+  "incident_id": "MP-15",
+  "observed": {
+    "capacity": 5,
+    "final_in_use": 5,
+    "tasks_completed": 0,
+    "tasks_timed_out": 7
+  },
+  "reported_symptom": "At higher concurrency, every aggregate task stalled at the same step, waiting for a database session, and then timed out. The database itself stayed nearly idle. The number of in-use sessions rose to the capacity limit and never came back down.",
+  "time_pressure": "Station aggregates are not refreshing while tasks stall.",
+  "title": "Every aggregate task stalls at the same step waiting for a database session"
+}

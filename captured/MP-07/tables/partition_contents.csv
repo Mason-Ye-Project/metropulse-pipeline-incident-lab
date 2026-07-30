@@ -1,0 +1,4 @@
+service_date,content_token,written_by_run,matches_scheduled
+2026-04-13,FIX-2026-04-14,MANUAL-FIX,no
+2026-04-14,SCHED-2026-04-14,SCHED,yes
+2026-04-15,SCHED-2026-04-15,SCHED,yes

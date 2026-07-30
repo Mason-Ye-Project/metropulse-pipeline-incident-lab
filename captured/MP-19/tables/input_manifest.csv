@@ -1,0 +1,11 @@
+delivery_id,source_name,record_count,byte_count,completeness_token,commit_state
+DLV-gate_count_event,raw_gate_count_event,216,16716,COMPLETE,COMMITTED
+DLV-route_change,raw_route_change,0,0,COMPLETE,COMMITTED
+DLV-route_registry,raw_route_registry,4,118,COMPLETE,COMMITTED
+DLV-scheduled_trip,raw_scheduled_trip,24,2448,COMPLETE,COMMITTED
+DLV-service_alert,raw_service_alert,0,0,COMPLETE,COMMITTED
+DLV-station_registry,raw_station_registry,12,363,COMPLETE,COMMITTED
+DLV-stop_event,raw_stop_event,72,16119,COMPLETE,COMMITTED
+DLV-stop_plan,raw_stop_plan,72,5191,COMPLETE,COMMITTED
+DLV-vehicle_position,raw_vehicle_position,0,0,COMPLETE,COMMITTED
+DLV-vehicle_telemetry,raw_vehicle_telemetry,216,40388,COMPLETE,COMMITTED

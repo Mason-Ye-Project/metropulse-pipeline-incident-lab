@@ -1,0 +1,3 @@
+check_id,scope_key,dimension,expected,actual,status
+MP-16-ASSEMBLY-001,all,scan_work,a single-worker assembly stays within 8388608 bytes,projected single-worker assembly is 144000000 bytes,FAIL
+MP-16-LOOKUPSIZE-001,all,valid_domain,station lookup stays within its contracted profile of 100000 rows,lookup projects to 3000000 rows,FAIL

@@ -1,0 +1,15 @@
+{
+  "affected_product": "stop_events_present",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values, not a real transit agency or a real incident.",
+  "incident_id": "MP-06",
+  "observed": {
+    "integrity_check": "FAIL",
+    "object_bytes": 360,
+    "producer_declared_bytes": 408,
+    "producer_declared_records": 24,
+    "records_present": 19
+  },
+  "reported_symptom": "The 02:00 stop-event archive object exists and holds most records, but the final batch of stop events is absent and the object is only slightly smaller than the size the producer declared. The daily job reported success.",
+  "time_pressure": "The morning service report depends on the 02:00 batch.",
+  "title": "The 02:00 stop-event archive is present but its final records are missing"
+}

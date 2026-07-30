@@ -1,0 +1,3 @@
+check_id,scope_key,dimension,expected,actual,status
+MP-14-COMMITTERS-001,all,control_consistency,at most one attempt can commit to the target,2 attempt(s) committed to the target; single-holder guard off,FAIL
+MP-14-STAGE-001,all,uniqueness,the target holds rows from one attempt for one service day,5 rows from 2 attempt(s) across 2 service day(s),FAIL

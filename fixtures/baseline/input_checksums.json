@@ -1,0 +1,12 @@
+{
+  "gate_count_event.csv": "81932121e2dd6951e365ee06d19cee785c188a1b855e299cd5a3d0ef6348a8df",
+  "route_change.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "route_registry.csv": "621810aef8b95c6c94373bbe7168fb35ab39aedd824ac3a8682ad482ca48f464",
+  "scheduled_trip.csv": "f704df9e948c41059b1833fe2041c0f01470d88579472ffcb324693aa79c5bac",
+  "service_alert.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "station_registry.csv": "33986baf93b3eda49b2a5f40b6606e064be3f07c6f8ecd6c85585e84480e3efc",
+  "stop_event.jsonl": "c480f87c05c581b78b9411e4ee353f7c475d4b2c4249d58a02015cd6b9fa9454",
+  "stop_plan.csv": "82c69b8b87094d387938f6dffd290e9724a66f4dd00da0591ab3f1739a9b95fd",
+  "vehicle_position.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "vehicle_telemetry.jsonl": "500bfcc8921437dc65ac639a18e06071561a5ac5fea5d0eb2a662a87501196dd"
+}

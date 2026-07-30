@@ -1,0 +1,31 @@
+{
+  "artifacts": {
+    "alert.json": {
+      "bytes": 767,
+      "sha256": "397b6da2cdd371c2b8f338d3bd4a34a7e755a9867ab97137e8487e34834cc50c"
+    },
+    "tables/progress_marker_history.csv": {
+      "bytes": 153,
+      "sha256": "685784344df216c696b3bb2ca0e8f6e6e57d5a1aa967085b0da7f92235f6fd36"
+    },
+    "tables/quality_results.csv": {
+      "bytes": 391,
+      "sha256": "6479efc1e7b3fe7c83bb3a11434fe0bdeba403d221f870dbb8ac814f20bede02"
+    },
+    "tables/source_rows.csv": {
+      "bytes": 597,
+      "sha256": "3c16dca7f56eea860bdd3a32053b513ebb7a8418ca13a1d0c3046fd1c25a7167"
+    },
+    "tables/source_vs_warehouse.csv": {
+      "bytes": 96,
+      "sha256": "4d8a4855c46bf396aa9767d5de1f73ff6b625d42229f96685f8c390eb281fe69"
+    },
+    "timeline.json": {
+      "bytes": 922,
+      "sha256": "65471d9d20af5400e53a9365933498c212c3c8d3374617c3eaaa888a0aafa1f1"
+    }
+  },
+  "description": "Evidence pack. Symptom and facts only; no root-cause label.",
+  "incident_id": "MP-10",
+  "run_id": "run-mp10-0001"
+}

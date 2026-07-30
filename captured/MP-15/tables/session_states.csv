@@ -1,0 +1,6 @@
+session_id,acquired_step,returned_step,state
+SESS-F-AGG_01,1,,HELD_OPEN
+SESS-F-AGG_02,2,,HELD_OPEN
+SESS-F-AGG_03,3,,HELD_OPEN
+SESS-F-AGG_04,4,,HELD_OPEN
+SESS-F-AGG_05,5,,HELD_OPEN

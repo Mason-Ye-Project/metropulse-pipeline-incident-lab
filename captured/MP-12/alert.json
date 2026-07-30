@@ -1,0 +1,14 @@
+{
+  "affected_product": "station dataset (staging)",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values produced by a deterministic simulator, not a real transit agency or a real incident.",
+  "incident_id": "MP-12",
+  "observed": {
+    "first_denied_index": 41,
+    "staged": 40,
+    "stations_denied": 60,
+    "stations_read": 40
+  },
+  "reported_symptom": "The first 40 stations returned data and were staged. Every station after that was denied access, and re-issuing the reads did not help. Partial output for the first block of stations is still sitting in staging.",
+  "time_pressure": "The station dataset is incomplete for the current cycle.",
+  "title": "A long station run loses access after the first block of stations"
+}

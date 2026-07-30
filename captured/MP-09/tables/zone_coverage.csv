@@ -1,0 +1,5 @@
+zone_code,stations_expected,stations_covered,ridership
+Z-CENTRAL,3,3,69
+Z-EAST,3,3,69
+Z-NORTH,3,3,69
+Z-WEST,3,0,0

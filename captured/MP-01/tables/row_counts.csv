@@ -1,0 +1,5 @@
+table,rows
+fct_station_gate_count,216
+fct_vehicle_counter_delta,216
+mart_route_hour_ridership,72
+mart_route_day,24

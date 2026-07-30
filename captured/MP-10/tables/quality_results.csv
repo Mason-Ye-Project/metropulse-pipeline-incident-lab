@@ -1,0 +1,3 @@
+check_id,scope_key,dimension,expected,actual,status
+MP-10-CONTROL-001,all,control_consistency,the committed progress marker stays within the accepted forward bound,the committed progress marker is beyond the accepted forward bound,FAIL
+MP-10-FRESHNESS-001,all,freshness,warehouse covers the latest source service day 2026-04-15,the latest source service day never entered the warehouse,FAIL

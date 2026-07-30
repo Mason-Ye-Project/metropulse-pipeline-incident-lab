@@ -1,0 +1,8 @@
+{
+  "expected_bytes": 408,
+  "expected_crc32_hex": "73f72831",
+  "expected_records": 24,
+  "last_sequence": 24,
+  "note": "The 02:00 stop-event batch, complete. The lab regenerates these bytes deterministically; a tail-cut copy is produced only inside a run.",
+  "object_name": "stop_event_batch_02_00"
+}

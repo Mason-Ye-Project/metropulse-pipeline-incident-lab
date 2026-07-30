@@ -1,0 +1,3 @@
+check_id,scope_key,dimension,expected,actual,status
+MP-08-COMPLETENESS-001,all,completeness,20 trips per the full-endpoint control count,15 trips ingested,FAIL
+MP-08-CONTROL-001,all,control_consistency,the request sequence reaches the source's terminal condition,the request sequence stopped while the source still signaled more,FAIL

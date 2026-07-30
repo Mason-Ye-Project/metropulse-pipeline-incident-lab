@@ -1,0 +1,14 @@
+{
+  "affected_product": "zone boardings enrichment",
+  "evidence_origin": "metropulse_deterministic_simulator",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values produced by a deterministic local simulator, not a real transit agency, a real incident, or a production engine's measurements.",
+  "incident_id": "MP-16",
+  "observed": {
+    "assembling_worker": "failing",
+    "other_workers": "idle",
+    "started_after": "timetable expansion"
+  },
+  "reported_symptom": "A daily job that builds a station lookup and enriches gate counts began failing on the worker that assembles the lookup. The failure started right after the timetable was expanded; the other workers sit almost idle while the one assembling worker gives up.",
+  "time_pressure": "The zone boardings summary is due for the next service review.",
+  "title": "A small station-lookup job starts failing while the workers stay idle"
+}

@@ -1,0 +1,155 @@
+{
+  "batch_size": 5,
+  "declared_total": 20,
+  "note": "The full multi-response endpoint. The authoritative terminal is a null next_marker.",
+  "responses": [
+    {
+      "next_marker": "M-001",
+      "request_marker": "M-000",
+      "response_code": 200,
+      "rows": [
+        {
+          "route_id": "R2",
+          "scheduled_start_utc": "2026-04-15T07:00:00Z",
+          "service_date": "2026-04-15",
+          "trip_id": "SCHTRIP_0001"
+        },
+        {
+          "route_id": "R3",
+          "scheduled_start_utc": "2026-04-15T08:00:00Z",
+          "service_date": "2026-04-15",
+          "trip_id": "SCHTRIP_0002"
+        },
+        {
+          "route_id": "R4",
+          "scheduled_start_utc": "2026-04-15T09:00:00Z",
+          "service_date": "2026-04-15",
+          "trip_id": "SCHTRIP_0003"
+        },
+        {
+          "route_id": "R1",
+          "scheduled_start_utc": "2026-04-15T10:00:00Z",
+          "service_date": "2026-04-15",
+          "trip_id": "SCHTRIP_0004"
+        },
+        {
+          "route_id": "R2",
+          "scheduled_start_utc": "2026-04-15T11:00:00Z",
+          "service_date": "2026-04-15",
+          "trip_id": "SCHTRIP_0005"
+        }
+      ]
+    },
+    {
+      "next_marker": "M-002",
+      "request_marker": "M-001",
+      "response_code": 200,
+      "rows": [
+        {
+          "route_id": "R3",
+          "scheduled_start_utc": "2026-04-15T12:00:00Z",
+          "service_date": "2026-04-15",
+          "trip_id": "SCHTRIP_0006"
+        },
+        {
+          "route_id": "R4",
+          "scheduled_start_utc": "2026-04-15T13:00:00Z",
+          "service_date": "2026-04-15",
+          "trip_id": "SCHTRIP_0007"
+        },
+        {
+          "route_id": "R1",
+          "scheduled_start_utc": "2026-04-15T14:00:00Z",
+          "service_date": "2026-04-15",
+          "trip_id": "SCHTRIP_0008"
+        },
+        {
+          "route_id": "R2",
+          "scheduled_start_utc": "2026-04-15T15:00:00Z",
+          "service_date": "2026-04-15",
+          "trip_id": "SCHTRIP_0009"
+        },
+        {
+          "route_id": "R3",
+          "scheduled_start_utc": "2026-04-15T16:00:00Z",
+          "service_date": "2026-04-15",
+          "trip_id": "SCHTRIP_0010"
+        }
+      ]
+    },
+    {
+      "next_marker": "M-003",
+      "request_marker": "M-002",
+      "response_code": 200,
+      "rows": [
+        {
+          "route_id": "R4",
+          "scheduled_start_utc": "2026-04-15T17:00:00Z",
+          "service_date": "2026-04-15",
+          "trip_id": "SCHTRIP_0011"
+        },
+        {
+          "route_id": "R1",
+          "scheduled_start_utc": "2026-04-15T06:00:00Z",
+          "service_date": "2026-04-15",
+          "trip_id": "SCHTRIP_0012"
+        },
+        {
+          "route_id": "R2",
+          "scheduled_start_utc": "2026-04-15T07:00:00Z",
+          "service_date": "2026-04-15",
+          "trip_id": "SCHTRIP_0013"
+        },
+        {
+          "route_id": "R3",
+          "scheduled_start_utc": "2026-04-15T08:00:00Z",
+          "service_date": "2026-04-15",
+          "trip_id": "SCHTRIP_0014"
+        },
+        {
+          "route_id": "R4",
+          "scheduled_start_utc": "2026-04-15T09:00:00Z",
+          "service_date": "2026-04-15",
+          "trip_id": "SCHTRIP_0015"
+        }
+      ]
+    },
+    {
+      "next_marker": null,
+      "request_marker": "M-003",
+      "response_code": 200,
+      "rows": [
+        {
+          "route_id": "R1",
+          "scheduled_start_utc": "2026-04-15T10:00:00Z",
+          "service_date": "2026-04-15",
+          "trip_id": "SCHTRIP_0016"
+        },
+        {
+          "route_id": "R2",
+          "scheduled_start_utc": "2026-04-15T11:00:00Z",
+          "service_date": "2026-04-15",
+          "trip_id": "SCHTRIP_0017"
+        },
+        {
+          "route_id": "R3",
+          "scheduled_start_utc": "2026-04-15T12:00:00Z",
+          "service_date": "2026-04-15",
+          "trip_id": "SCHTRIP_0018"
+        },
+        {
+          "route_id": "R4",
+          "scheduled_start_utc": "2026-04-15T13:00:00Z",
+          "service_date": "2026-04-15",
+          "trip_id": "SCHTRIP_0019"
+        },
+        {
+          "route_id": "R1",
+          "scheduled_start_utc": "2026-04-15T14:00:00Z",
+          "service_date": "2026-04-15",
+          "trip_id": "SCHTRIP_0020"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "affected_tables": [
+    "mp15_session_policy",
+    "mp15_task_result",
+    "mp15_pool_stat"
+  ],
+  "baseline_id": "metro-v1",
+  "catalog_version": "1.0",
+  "core_evidence_kind": "DETERMINISTIC_SIMULATOR",
+  "expected_detection_ids": [
+    "MP-15-STALL-001",
+    "MP-15-SESSIONS-001"
+  ],
+  "family": "C. Execution / dependency / access",
+  "fault_operations": [
+    "set_session_policy:skip_release_on_error"
+  ],
+  "handler": "mp_15",
+  "incident_id": "MP-15",
+  "primary_invariant_id": "MP-15-SESSION-RETURN",
+  "reader_title": "Every aggregate task stalls at the same step waiting for a database session",
+  "recovery": {
+    "mode": "REPLAY"
+  },
+  "runtime_profile": "stdlib-sqlite",
+  "schema_version": 1,
+  "transfer_mappings": [
+    "SQLAlchemy QueuePool timeouts and pg_stat_activity"
+  ]
+}

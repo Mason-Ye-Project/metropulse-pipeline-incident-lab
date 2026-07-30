@@ -1,0 +1,12 @@
+{
+  "affected_product": "station_feed_snapshot",
+  "current_version": "v3",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values produced by a deterministic simulator, not a real transit agency or a real incident.",
+  "incident_id": "MP-21",
+  "objects_that_cannot_be_opened": [
+    "OBJ-MAN-station_feed-v3-1"
+  ],
+  "reported_symptom": "A reader opened the latest published station-feed snapshot. The catalog reports the version as published, but opening it fails: one of the objects it lists cannot be read. The prior published version still opens completely.",
+  "time_pressure": "A downstream consumer refresh is blocked until the version opens.",
+  "title": "A dataset marked published cannot fully open \u2014 one referenced object is missing"
+}

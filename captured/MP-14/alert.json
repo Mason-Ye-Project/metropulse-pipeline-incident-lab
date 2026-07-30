@@ -1,0 +1,13 @@
+{
+  "affected_product": "target staging",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values produced by a deterministic simulator, not a real transit agency or a real incident.",
+  "incident_id": "MP-14",
+  "observed": {
+    "distinct_attempts": 2,
+    "distinct_service_days": 2,
+    "rows": 5
+  },
+  "reported_symptom": "The scheduler decided the first attempt had stopped and started a second one, but the first attempt kept producing rows into the same target. The target now holds rows from two attempts for two different service days.",
+  "time_pressure": "The target must not be published while it mixes two attempts.",
+  "title": "The scheduler starts a second attempt while the first is still producing output"
+}

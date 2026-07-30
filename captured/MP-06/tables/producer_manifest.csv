@@ -1,0 +1,2 @@
+delivery_id,source_name,declared_records,declared_bytes,commit_state
+DLV-mp06-stop-batch,mp06_stop_event,24,408,COMMITTED

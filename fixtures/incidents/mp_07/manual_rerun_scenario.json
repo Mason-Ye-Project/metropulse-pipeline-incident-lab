@@ -1,0 +1,15 @@
+{
+  "correct_final_partitions": {
+    "2026-04-13": "SCHED-2026-04-13",
+    "2026-04-14": "FIX-2026-04-14",
+    "2026-04-15": "SCHED-2026-04-15"
+  },
+  "frozen_trigger_wall_clock": "2026-04-16T09:30:00Z",
+  "note": "A manual re-trigger targets one service day; the faulty resolution rewrites the day before while logging the requested one.",
+  "partitions": [
+    "2026-04-13",
+    "2026-04-14",
+    "2026-04-15"
+  ],
+  "requested_service_date": "2026-04-14"
+}

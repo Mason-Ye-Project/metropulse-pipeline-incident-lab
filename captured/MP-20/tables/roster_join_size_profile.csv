@@ -1,0 +1,2 @@
+phase,recorded_size,actual_size,size_error_x,size_profile_current,join_plan_step,matched_rows,sqlite_version
+as_loaded,24,6000,250,0,SCAN r | SEARCH l USING COVERING INDEX ix_load_station (station_id=?) | USE TEMP B-TREE FOR GROUP BY,6000,3.53.2

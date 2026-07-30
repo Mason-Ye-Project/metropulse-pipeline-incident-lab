@@ -1,0 +1,3 @@
+check_id,scope_key,dimension,expected,actual,status
+MP-06-COMPLETENESS-001,all,completeness,24 stop events per producer manifest,19 stop events present,FAIL
+MP-06-CONTROL-001,all,control_consistency,object size and integrity check agree with the producer manifest,object integrity check fails and its size is below the declared size,FAIL

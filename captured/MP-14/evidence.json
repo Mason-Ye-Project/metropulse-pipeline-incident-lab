@@ -1,0 +1,36 @@
+{
+  "artifacts": {
+    "alert.json": {
+      "bytes": 774,
+      "sha256": "598517cd7b1ce8a8a2c8822875f1574d14912c82d54acdf9560501de3b96cceb"
+    },
+    "tables/attempt_status.csv": {
+      "bytes": 54,
+      "sha256": "49742d9661c17c09839087197db5833724815fd6a31bdf88210cdce369979ba5"
+    },
+    "tables/attempt_timeline.csv": {
+      "bytes": 198,
+      "sha256": "26544d7dcfff8406a3a6be8602751ad0ce4f10696364a73d6f603387f3d20c12"
+    },
+    "tables/input_manifest.csv": {
+      "bytes": 715,
+      "sha256": "7e3989fb44c1cd2ce2648598e9a13f70373d8eb8dffb7f1ffac9e25afda18388"
+    },
+    "tables/quality_results.csv": {
+      "bytes": 353,
+      "sha256": "cbbf5f9fd3813b736ecf89639099fb3ed26291246129cb3fe431964ad1bd42c6"
+    },
+    "tables/target_rows.csv": {
+      "bytes": 133,
+      "sha256": "0e9054b6d8a2a5c2e1dbea599ed3c1f8ee3df299f659415d859eed36ff0a6cc3"
+    },
+    "timeline.json": {
+      "bytes": 1482,
+      "sha256": "f2acbb6f0759bc4dd51f3fc8a46f0183fbd5830447f65295747c63c4a3d7feee"
+    }
+  },
+  "description": "Evidence pack. Symptom and facts only; no root-cause label.",
+  "evidence_origin": "metropulse_deterministic_simulator",
+  "incident_id": "MP-14",
+  "run_id": "run-mp14-0001"
+}

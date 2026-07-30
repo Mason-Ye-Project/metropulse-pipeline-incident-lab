@@ -1,0 +1,8 @@
+{
+  "affected_product": "mp03_reading_service_day",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values, not a real transit agency or a real incident. The dates here are synthetic test fixtures, not a real city incident.",
+  "incident_id": "MP-03",
+  "reported_symptom": "A small number of gate readings recorded in the early hours are grouped under the neighbouring day's report instead of the day the reference calendar assigns them to. The count of misgrouped readings is noticeably larger on one particular changeover night. The events themselves arrived on time and parsed cleanly.",
+  "time_pressure": "A daily station report is published each morning.",
+  "title": "A handful of early-hours gate readings are grouped under the adjacent day, and the shift is larger on one changeover night"
+}

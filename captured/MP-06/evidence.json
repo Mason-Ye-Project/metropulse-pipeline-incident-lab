@@ -1,0 +1,35 @@
+{
+  "artifacts": {
+    "alert.json": {
+      "bytes": 812,
+      "sha256": "f3c6bd58ac583fd9c0ab78b685c4458d3aa8c472438095c01a2a273f2a6d4013"
+    },
+    "tables/archive_object.csv": {
+      "bytes": 209,
+      "sha256": "8e77dd9d31f3dfbd18c47de885f6ceb75cee7d7967e9a17b4ff8d54f7aba6a08"
+    },
+    "tables/producer_manifest.csv": {
+      "bytes": 122,
+      "sha256": "fa818f7b15f4f9c899e7a351a74e0529ca976ac6e409401bdee820e01bd31659"
+    },
+    "tables/quality_results.csv": {
+      "bytes": 338,
+      "sha256": "b75eaf258f1ec933e3779ac50d4e42137ee8a95f1462aaa8030bb0673f452ee1"
+    },
+    "tables/row_counts.csv": {
+      "bytes": 57,
+      "sha256": "94a3bd88d5f27bb917d79bb047a8fe364e4fcdbb5cd272511ee0f41493d4054a"
+    },
+    "tables/stop_events_present.csv": {
+      "bytes": 1263,
+      "sha256": "b73112decec832dca35411f7c48fe6947ecc8a90f4faa20bd1b4b2e7477e2bd1"
+    },
+    "timeline.json": {
+      "bytes": 966,
+      "sha256": "118499b3830291927f4aae2af0c1056a94a6336cec779e9792f79f212b05b89a"
+    }
+  },
+  "description": "Evidence pack. Symptom and facts only; no root-cause label.",
+  "incident_id": "MP-06",
+  "run_id": "run-mp06-0001"
+}

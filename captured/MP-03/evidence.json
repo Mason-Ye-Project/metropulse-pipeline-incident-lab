@@ -1,0 +1,27 @@
+{
+  "artifacts": {
+    "alert.json": {
+      "bytes": 849,
+      "sha256": "bccbd099c1aa962fb173b628d3c32d89df490b5ece3c1e85aa944d302785e37a"
+    },
+    "tables/misgrouping_by_reference_day.csv": {
+      "bytes": 86,
+      "sha256": "1b4425f2120f2eae0268eb81cc8b50892d8d578d7e21be0314f71fa67c55c142"
+    },
+    "tables/per_day_reconciliation.csv": {
+      "bytes": 284,
+      "sha256": "d2160f5e6d8b4d496662e5a546a495e8222f8d5fca765100d819f44de99defb6"
+    },
+    "tables/reading_grouping.csv": {
+      "bytes": 873,
+      "sha256": "8ee9e2a57aaa61cfb383c13634af65a0687aa03802e36077676a40eccfa82d0d"
+    },
+    "timeline.json": {
+      "bytes": 1146,
+      "sha256": "9eaf22a207ce0da275cebfabc043afce3ed969456001a8a4e5499324ddde40ae"
+    }
+  },
+  "description": "Evidence pack. Symptom and facts only; no root-cause label.",
+  "incident_id": "MP-03",
+  "run_id": "run-mp03-0001"
+}

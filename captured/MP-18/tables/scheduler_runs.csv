@@ -1,0 +1,2 @@
+scheduler_run_id,logical_run_date,creation_reason,state
+SR-run-mp18-0001-fine,2026-04-13T00:00:00Z,fine-grain projection=51840 budget=512,REJECTED_OVER_BUDGET

@@ -1,0 +1,2 @@
+source_name,trips_ingested,trips_expected,shortfall
+scheduled_trips_endpoint,15,20,5

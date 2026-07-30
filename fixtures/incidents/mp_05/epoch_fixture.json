@@ -1,0 +1,144 @@
+{
+  "description": "MetroPulse vehicle-position batch. epoch_raw is an integer under a versioned source contract. Values and the parser cases are checked-in lab fixtures; nothing here reads the host clock. Synthetic test data, not a real incident.",
+  "source_contract": {
+    "source_name": "vehicle_position_feed",
+    "unit": "epoch_seconds",
+    "unit_version": 3,
+    "valid_from_utc": "2025-01-01T00:00:00Z",
+    "valid_to_utc": "2027-01-01T00:00:00Z"
+  },
+  "position_batch": [
+    {
+      "position_event_id": "POS_0001",
+      "vehicle_id": "VEH_TEST_01",
+      "epoch_raw": 1776061800
+    },
+    {
+      "position_event_id": "POS_0002",
+      "vehicle_id": "VEH_TEST_01",
+      "epoch_raw": 1776064500
+    },
+    {
+      "position_event_id": "POS_0003",
+      "vehicle_id": "VEH_TEST_01",
+      "epoch_raw": 1776156300
+    },
+    {
+      "position_event_id": "POS_0004",
+      "vehicle_id": "VEH_TEST_01",
+      "epoch_raw": 1776183600
+    },
+    {
+      "position_event_id": "POS_0005",
+      "vehicle_id": "VEH_TEST_01",
+      "epoch_raw": 1776273000
+    },
+    {
+      "position_event_id": "POS_0006",
+      "vehicle_id": "VEH_TEST_02",
+      "epoch_raw": 1776061800
+    },
+    {
+      "position_event_id": "POS_0007",
+      "vehicle_id": "VEH_TEST_02",
+      "epoch_raw": 1776064500
+    },
+    {
+      "position_event_id": "POS_0008",
+      "vehicle_id": "VEH_TEST_02",
+      "epoch_raw": 1776156300
+    },
+    {
+      "position_event_id": "POS_0009",
+      "vehicle_id": "VEH_TEST_02",
+      "epoch_raw": 1776183600
+    },
+    {
+      "position_event_id": "POS_0010",
+      "vehicle_id": "VEH_TEST_02",
+      "epoch_raw": 1776273000
+    },
+    {
+      "position_event_id": "POS_0011",
+      "vehicle_id": "VEH_TEST_03",
+      "epoch_raw": 1776061800
+    },
+    {
+      "position_event_id": "POS_0012",
+      "vehicle_id": "VEH_TEST_03",
+      "epoch_raw": 1776064500
+    },
+    {
+      "position_event_id": "POS_0013",
+      "vehicle_id": "VEH_TEST_03",
+      "epoch_raw": 1776156300
+    },
+    {
+      "position_event_id": "POS_0014",
+      "vehicle_id": "VEH_TEST_03",
+      "epoch_raw": 1776183600
+    },
+    {
+      "position_event_id": "POS_0015",
+      "vehicle_id": "VEH_TEST_03",
+      "epoch_raw": 1776273000
+    },
+    {
+      "position_event_id": "POS_0016",
+      "vehicle_id": "VEH_TEST_04",
+      "epoch_raw": 1776061800
+    },
+    {
+      "position_event_id": "POS_0017",
+      "vehicle_id": "VEH_TEST_04",
+      "epoch_raw": 1776064500
+    },
+    {
+      "position_event_id": "POS_0018",
+      "vehicle_id": "VEH_TEST_04",
+      "epoch_raw": 1776156300
+    },
+    {
+      "position_event_id": "POS_0019",
+      "vehicle_id": "VEH_TEST_04",
+      "epoch_raw": 1776183600
+    },
+    {
+      "position_event_id": "POS_0020",
+      "vehicle_id": "VEH_TEST_04",
+      "epoch_raw": 1776273000
+    }
+  ],
+  "parser_cases": [
+    {
+      "label": "seconds_in_window",
+      "epoch_raw": 1776061800,
+      "unit": "epoch_seconds",
+      "expect_in_window": true
+    },
+    {
+      "label": "milliseconds_in_window",
+      "epoch_raw": 1776061800000,
+      "unit": "epoch_milliseconds",
+      "expect_in_window": true
+    },
+    {
+      "label": "seconds_read_as_milliseconds",
+      "epoch_raw": 1776061800,
+      "unit": "epoch_milliseconds",
+      "expect_in_window": false
+    },
+    {
+      "label": "negative_epoch",
+      "epoch_raw": -100000,
+      "unit": "epoch_seconds",
+      "expect_in_window": false
+    },
+    {
+      "label": "beyond_upper_bound",
+      "epoch_raw": 1893456000,
+      "unit": "epoch_seconds",
+      "expect_in_window": false
+    }
+  ]
+}

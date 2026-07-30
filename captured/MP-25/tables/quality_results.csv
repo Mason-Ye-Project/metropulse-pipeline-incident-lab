@@ -1,0 +1,3 @@
+check_id,scope_key,dimension,expected,actual,status
+MP-25-COVERAGE-001,all,coverage,every event the feed produced up to the processed position is present in the target,"6 event(s) the feed produced are missing from the target, though the position is marked processed",FAIL
+MP-25-POSITION-001,all,control_consistency,the target's coverage is continuous up to the feed's processed position,the target is missing events below the feed's processed position,FAIL

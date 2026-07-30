@@ -1,0 +1,30 @@
+{
+  "affected_tables": [
+    "mp12_access_grant",
+    "mp12_station_plan",
+    "mp12_processed_station"
+  ],
+  "baseline_id": "metro-v1",
+  "catalog_version": "1.0",
+  "core_evidence_kind": "DETERMINISTIC_SIMULATOR",
+  "expected_detection_ids": [
+    "MP-12-BOUNDARY-001",
+    "MP-12-GRANT-001"
+  ],
+  "family": "C. Execution / dependency / access",
+  "fault_operations": [
+    "set_access_grant:static_short_lived"
+  ],
+  "handler": "mp_12",
+  "incident_id": "MP-12",
+  "primary_invariant_id": "MP-12-ACCESS-COVERAGE",
+  "reader_title": "A long station run loses access after the first block of stations",
+  "recovery": {
+    "mode": "REPLAY"
+  },
+  "runtime_profile": "stdlib-sqlite",
+  "schema_version": 1,
+  "transfer_mappings": [
+    "IAM/SDK refreshable credential providers"
+  ]
+}

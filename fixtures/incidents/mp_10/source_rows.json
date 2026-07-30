@@ -1,0 +1,78 @@
+{
+  "forward_bound": "2026-05-01T00:00:00Z",
+  "note": "One record carries an impossible forward-dated timestamp. A bounded, composite progress marker must never adopt it.",
+  "rows": [
+    {
+      "batch": "A",
+      "service_date": "2026-04-13",
+      "stable_id": "TRIP_A01",
+      "updated_at": "2026-04-13T06:00:00Z"
+    },
+    {
+      "batch": "A",
+      "service_date": "2026-04-13",
+      "stable_id": "TRIP_A02",
+      "updated_at": "2026-04-13T07:00:00Z"
+    },
+    {
+      "batch": "A",
+      "service_date": "2026-04-13",
+      "stable_id": "TRIP_A03",
+      "updated_at": "2026-04-13T08:00:00Z"
+    },
+    {
+      "batch": "A",
+      "service_date": "2026-04-13",
+      "stable_id": "TRIP_A04",
+      "updated_at": "2026-04-13T09:00:00Z"
+    },
+    {
+      "batch": "B",
+      "service_date": "2026-04-14",
+      "stable_id": "TRIP_B01",
+      "updated_at": "2026-04-14T06:00:00Z"
+    },
+    {
+      "batch": "B",
+      "service_date": "2026-04-14",
+      "stable_id": "TRIP_B02",
+      "updated_at": "2026-04-14T07:00:00Z"
+    },
+    {
+      "batch": "B",
+      "service_date": "2026-04-14",
+      "stable_id": "TRIP_B03",
+      "updated_at": "2026-04-14T08:00:00Z"
+    },
+    {
+      "batch": "B",
+      "service_date": "2026-04-14",
+      "stable_id": "TRIP_B99",
+      "updated_at": "2099-01-01T00:00:00Z"
+    },
+    {
+      "batch": "C",
+      "service_date": "2026-04-15",
+      "stable_id": "TRIP_C01",
+      "updated_at": "2026-04-15T06:00:00Z"
+    },
+    {
+      "batch": "C",
+      "service_date": "2026-04-15",
+      "stable_id": "TRIP_C02",
+      "updated_at": "2026-04-15T07:00:00Z"
+    },
+    {
+      "batch": "C",
+      "service_date": "2026-04-15",
+      "stable_id": "TRIP_C03",
+      "updated_at": "2026-04-15T08:00:00Z"
+    },
+    {
+      "batch": "C",
+      "service_date": "2026-04-15",
+      "stable_id": "TRIP_C04",
+      "updated_at": "2026-04-15T09:00:00Z"
+    }
+  ]
+}

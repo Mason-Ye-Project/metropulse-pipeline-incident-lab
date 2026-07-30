@@ -1,0 +1,29 @@
+{
+  "affected_tables": [
+    "mp13_env_config",
+    "mp13_parse_output"
+  ],
+  "baseline_id": "metro-v1",
+  "catalog_version": "1.0",
+  "core_evidence_kind": "DETERMINISTIC_SIMULATOR",
+  "expected_detection_ids": [
+    "MP-13-PARSE-001",
+    "MP-13-ENV-001"
+  ],
+  "family": "C. Execution / dependency / access",
+  "fault_operations": [
+    "set_environment:loose_fresh_runner"
+  ],
+  "handler": "mp_13",
+  "incident_id": "MP-13",
+  "primary_invariant_id": "MP-13-BUILD-DETERMINISM",
+  "reader_title": "The same commit reads a different timestamp on a fresh runner",
+  "recovery": {
+    "mode": "ROLLBACK"
+  },
+  "runtime_profile": "stdlib-sqlite",
+  "schema_version": 1,
+  "transfer_mappings": [
+    "pip lockfiles, hash-checking installs, immutable images"
+  ]
+}

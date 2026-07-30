@@ -1,0 +1,17 @@
+{
+  "affected_product": "station_gate_counts",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values, not a real transit agency or a real incident.",
+  "incident_id": "MP-09",
+  "observed": {
+    "expected_deliveries": 4,
+    "received_deliveries": 3,
+    "uncovered_stations": [
+      "STN_010",
+      "STN_011",
+      "STN_012"
+    ]
+  },
+  "reported_symptom": "West-side station ridership is about a quarter lower than usual, yet every file that arrived is checksum-valid and the ingest job reported success.",
+  "time_pressure": "A zone ridership summary is due at the next service review.",
+  "title": "West-side station ridership is about a quarter low though every delivered file is valid"
+}

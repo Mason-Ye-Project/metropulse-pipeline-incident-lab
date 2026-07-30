@@ -1,0 +1,3 @@
+check_id,scope_key,dimension,expected,actual,status
+MP-12-BOUNDARY-001,all,completeness,all 100 stations read and staged,"40 stations read, 60 denied starting at station #41; 40 staged",FAIL
+MP-12-GRANT-001,all,control_consistency,the access grant covers the whole run and renews itself,a static grant valid for 200s was used for a 500s run,FAIL

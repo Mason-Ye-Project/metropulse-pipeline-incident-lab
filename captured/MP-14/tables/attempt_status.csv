@@ -1,0 +1,3 @@
+attempt_id,state,sequence
+A,COMMITTED,1
+B,COMMITTED,2

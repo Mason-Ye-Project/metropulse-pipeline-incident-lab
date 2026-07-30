@@ -1,0 +1,13 @@
+{
+  "affected_product": "scheduled_trips_dashboard",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values, not a real transit agency or a real incident.",
+  "incident_id": "MP-08",
+  "observed": {
+    "shortfall": 5,
+    "trips_expected": 20,
+    "trips_ingested": 15
+  },
+  "reported_symptom": "The scheduled-trips dashboard is short by almost exactly one request's worth of trips every day. Every request to the source returned HTTP 200 and the ingest job reported success.",
+  "time_pressure": "The operations dashboard is reviewed each morning.",
+  "title": "The scheduled-trips dashboard is short by a fixed block of trips every day"
+}

@@ -1,0 +1,6 @@
+{
+  "corrupt": "corrupt_PART_1.csv fails its checksum and is quarantined.",
+  "duplicate": "duplicate_PART_2.csv dedupes to a single processed unit.",
+  "extra": "extra_PART_X.csv is not in the expected set and is quarantined.",
+  "note": "Accounting must always close: expected = processed + quarantined."
+}

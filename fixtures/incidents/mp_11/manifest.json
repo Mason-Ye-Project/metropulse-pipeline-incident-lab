@@ -1,0 +1,29 @@
+{
+  "affected_tables": [
+    "mp11_retry_policy",
+    "mp11_fetch_attempt"
+  ],
+  "baseline_id": "metro-v1",
+  "catalog_version": "1.0",
+  "core_evidence_kind": "DETERMINISTIC_SIMULATOR",
+  "expected_detection_ids": [
+    "MP-11-RATE-001",
+    "MP-11-OWNER-001"
+  ],
+  "family": "C. Execution / dependency / access",
+  "fault_operations": [
+    "set_request_policy:layered_immediate"
+  ],
+  "handler": "mp_11",
+  "incident_id": "MP-11",
+  "primary_invariant_id": "MP-11-REQUEST-DISCIPLINE",
+  "reader_title": "A brief burst of rejected station-status requests turns into a sustained outage",
+  "recovery": {
+    "mode": "REPLAY"
+  },
+  "runtime_profile": "stdlib-sqlite",
+  "schema_version": 1,
+  "transfer_mappings": [
+    "Airflow pools and AWS SDK retry token budgets"
+  ]
+}

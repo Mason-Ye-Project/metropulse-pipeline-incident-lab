@@ -1,0 +1,11 @@
+{
+  "affected_product": "service_calendar_table",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values produced by a deterministic simulator, not a real transit agency or a real incident.",
+  "incident_id": "MP-23",
+  "missing_rows": [
+    "STN_ACCESS_RAMP"
+  ],
+  "reported_symptom": "A bad service-calendar load was undone. Afterward, a different team's accessibility-station update \u2014 made in the same period but unrelated to the calendar load \u2014 also disappeared from the table.",
+  "time_pressure": "The accessibility team needs their correct update restored.",
+  "title": "Reverting one bad calendar load also erased another team's correct accessibility update"
+}

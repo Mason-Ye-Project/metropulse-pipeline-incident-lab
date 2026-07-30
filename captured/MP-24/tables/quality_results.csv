@@ -1,0 +1,3 @@
+check_id,scope_key,dimension,expected,actual,status
+MP-24-DELETION-001,all,control_consistency,a maintenance removal never deletes a file that is still being written or belongs to the current partition,a maintenance removal deleted a file that was still being written,FAIL
+MP-24-PARTITION-001,all,completeness,the partition contains every row its listed files provide,the partition reads short by 4 row(s); a listed file is missing,FAIL

@@ -1,0 +1,14 @@
+{
+  "affected_product": "trip_warehouse",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values, not a real transit agency or a real incident.",
+  "incident_id": "MP-10",
+  "observed": {
+    "latest_source_date": "2026-04-15",
+    "missing_service_dates": [
+      "2026-04-15"
+    ]
+  },
+  "reported_symptom": "After one bad record was ingested, later normal trips stopped entering the warehouse entirely. Each incremental run still reports success and selects zero new rows, so the latest service day is missing.",
+  "time_pressure": "Downstream reports assume the warehouse is current each morning.",
+  "title": "After one bad record, later normal trips never enter the warehouse although the job keeps succeeding"
+}

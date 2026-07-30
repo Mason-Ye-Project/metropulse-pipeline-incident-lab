@@ -1,0 +1,13 @@
+{
+  "affected_product": "station-zone enrichment",
+  "evidence_origin": "metropulse_deterministic_simulator",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values produced by a deterministic local simulator, not a real transit agency, a real incident, or a production engine's measurements.",
+  "incident_id": "MP-17",
+  "observed": {
+    "runtime_scales_with": "gate event count",
+    "single_query_latency": "milliseconds"
+  },
+  "reported_symptom": "The gate-event enrichment task now takes roughly ten times longer since gate volume grew about ten times, yet each individual database query still returns in a few milliseconds. Runtime tracks the number of gate events, not the size of any single query.",
+  "time_pressure": "The enrichment feeds the morning operations dashboard.",
+  "title": "Task runtime grows with the number of gate events, but each query stays fast"
+}

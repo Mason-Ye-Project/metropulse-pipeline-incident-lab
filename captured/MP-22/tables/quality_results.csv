@@ -1,0 +1,3 @@
+check_id,scope_key,dimension,expected,actual,status
+MP-22-PROMISE-001,all,control_consistency,guaranteed raw-input availability covers the promised replay range,guaranteed input availability is shorter than the promised range,FAIL
+MP-22-REPLAYABLE-001,all,replayability,every promised date still has its raw input present,"5 promised date(s) have no raw input, though the processed summary still exists",FAIL

@@ -1,0 +1,28 @@
+{
+  "artifacts": {
+    "alert.json": {
+      "bytes": 911,
+      "sha256": "a21aa4e894f999e5cd162e766f0460eefadf1e6b5a796b0f51b93350ee75ccf5"
+    },
+    "tables/input_manifest.csv": {
+      "bytes": 714,
+      "sha256": "0e04b72914da08b579c5c4de15c4a0a1243049be54b7752cc296787b68bcc2b0"
+    },
+    "tables/quality_results.csv": {
+      "bytes": 348,
+      "sha256": "404b442a27eb2073a584f0652848444fb1cedfaa4fc14a06f2755012a4247f02"
+    },
+    "tables/roster_join_size_profile.csv": {
+      "bytes": 246,
+      "sha256": "4e957c0da7dfc265e8bb7688b2e6507889423722f9d719a209598f8565087ee7"
+    },
+    "timeline.json": {
+      "bytes": 1234,
+      "sha256": "a128c286b7071132d1d680199018ffef88fcb4caab21544b897596524ce2ece7"
+    }
+  },
+  "description": "Evidence pack. Symptom and logical-work facts only; no root-cause label.",
+  "evidence_origin": "metropulse_deterministic_simulator",
+  "incident_id": "MP-20",
+  "run_id": "run-mp20-0001"
+}

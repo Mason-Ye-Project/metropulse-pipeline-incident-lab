@@ -1,0 +1,14 @@
+{
+  "affected_product": "station-status collection",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values produced by a deterministic simulator, not a real transit agency or a real incident.",
+  "incident_id": "MP-11",
+  "observed": {
+    "baseline_requests": 36,
+    "requests_issued": 324,
+    "stations_collected": 0,
+    "stations_expected": 12
+  },
+  "reported_symptom": "The station-status service briefly rejected requests. Request volume then rose sharply and errors kept coming even after the upstream service started to answer normally again. The collection task never finished for this cycle.",
+  "time_pressure": "The public service-status view is stale until collection recovers.",
+  "title": "A brief burst of rejected station-status requests turns into a sustained outage"
+}

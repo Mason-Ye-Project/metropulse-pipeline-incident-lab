@@ -1,0 +1,12 @@
+{
+  "affected_product": "route_day_partitions",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values, not a real transit agency or a real incident.",
+  "incident_id": "MP-07",
+  "observed": {
+    "refreshed_service_date": "2026-04-13",
+    "requested_service_date": "2026-04-14"
+  },
+  "reported_symptom": "An engineer manually re-triggered a fix for service day 2026-04-14. The run reported success and the log shows that date, but the output that actually changed belongs to a different service day (2026-04-13). The requested day still shows its old content.",
+  "time_pressure": "The corrected service report is expected the same morning.",
+  "title": "A manual rerun succeeds but refreshes the wrong service day"
+}

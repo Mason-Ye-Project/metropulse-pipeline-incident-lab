@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metropulse-lab"
+version = "1.0.0"
+description = "MetroPulse incident lab — companion software for The Data Pipeline Troubleshooting Lab (fictional, synthetic transit data)."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "MASON YE" }]
+keywords = ["data-engineering", "pipeline", "troubleshooting", "incident", "sqlite"]
+dependencies = []  # zero-install: CPython 3.12 standard library only
+
+[project.scripts]
+metropulse-lab = "metropulse_lab.cli:_console_main"
+
+[tool.setuptools]
+packages = [
+  "metropulse_lab",
+  "metropulse_lab.pipeline",
+  "metropulse_lab.simulators",
+  "metropulse_lab.incidents",
+  "metropulse_lab.checks",
+]
+
+# Installation is optional. The authoritative, tested entry point is:
+#   python -m metropulse_lab <command>
+# and it must work from a clean CPython 3.12 checkout with no `pip install`.

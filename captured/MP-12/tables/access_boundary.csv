@@ -1,0 +1,2 @@
+stations_expected,stations_read,stations_denied,staged,first_denied_index,grant_lifetime_s,run_duration_s
+100,40,60,40,41,200,500

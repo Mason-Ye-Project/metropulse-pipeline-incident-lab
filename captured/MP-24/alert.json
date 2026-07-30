@@ -1,0 +1,10 @@
+{
+  "affected_product": "station_partition",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values produced by a deterministic simulator, not a real transit agency or a real incident.",
+  "incident_id": "MP-24",
+  "partition": "STN_007-2026-04-15",
+  "reported_symptom": "A maintenance job reported success. Right after, a just-written station partition reads short: several rows are missing, and the previous-version file that would let the change be undone is also gone.",
+  "rows_missing": 4,
+  "time_pressure": "A downstream report needs the full partition today.",
+  "title": "A partition a maintenance job reported clean now reads short, and the files needed to undo it are gone"
+}

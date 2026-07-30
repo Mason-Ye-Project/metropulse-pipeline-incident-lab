@@ -1,0 +1,30 @@
+{
+  "affected_tables": [
+    "mp14_guard_policy",
+    "mp14_target_staging",
+    "mp14_attempt_event"
+  ],
+  "baseline_id": "metro-v1",
+  "catalog_version": "1.0",
+  "core_evidence_kind": "DETERMINISTIC_SIMULATOR",
+  "expected_detection_ids": [
+    "MP-14-STAGE-001",
+    "MP-14-COMMITTERS-001"
+  ],
+  "family": "C. Execution / dependency / access",
+  "fault_operations": [
+    "set_guard_policy:no_single_holder"
+  ],
+  "handler": "mp_14",
+  "incident_id": "MP-14",
+  "primary_invariant_id": "MP-14-SINGLE-COMMITTER",
+  "reader_title": "The scheduler starts a second attempt while the first is still producing output",
+  "recovery": {
+    "mode": "REPLAY"
+  },
+  "runtime_profile": "stdlib-sqlite",
+  "schema_version": 1,
+  "transfer_mappings": [
+    "Orchestrator heartbeat/on-kill contracts and external job ids"
+  ]
+}

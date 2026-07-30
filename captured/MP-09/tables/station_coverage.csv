@@ -1,0 +1,13 @@
+station_id,zone_code,route_id,ridership_present,covered
+STN_001,Z-CENTRAL,R1,23,yes
+STN_002,Z-CENTRAL,R1,23,yes
+STN_003,Z-CENTRAL,R1,23,yes
+STN_004,Z-NORTH,R2,23,yes
+STN_005,Z-NORTH,R2,23,yes
+STN_006,Z-NORTH,R2,23,yes
+STN_007,Z-EAST,R3,23,yes
+STN_008,Z-EAST,R3,23,yes
+STN_009,Z-EAST,R3,23,yes
+STN_010,Z-WEST,R4,0,no
+STN_011,Z-WEST,R4,0,no
+STN_012,Z-WEST,R4,0,no

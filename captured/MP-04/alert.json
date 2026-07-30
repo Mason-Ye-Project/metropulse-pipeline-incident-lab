@@ -1,0 +1,8 @@
+{
+  "affected_product": "mp04_monthly_route_distance",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values, not a real transit agency or a real incident.",
+  "incident_id": "MP-04",
+  "reported_symptom": "The monthly route-distance summary shows a negative total for some routes. The daily per-vehicle distances that feed it are every one non-negative, and no correction or reversal rows are present. The job reported success.",
+  "time_pressure": "The monthly distance summary feeds a capacity review.",
+  "title": "A monthly route-distance total is negative even though every daily per-vehicle distance is non-negative"
+}

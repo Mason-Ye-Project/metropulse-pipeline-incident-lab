@@ -1,0 +1,16 @@
+{
+  "affected_product": "station_feed_raw",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values produced by a deterministic simulator, not a real transit agency or a real incident.",
+  "incident_id": "MP-22",
+  "promised_dates_without_raw_input": [
+    "2026-05-01",
+    "2026-05-16",
+    "2026-05-31",
+    "2026-06-15",
+    "2026-06-25"
+  ],
+  "reported_symptom": "The team tried to replay an earlier month of the station feed as promised in the runbook. The raw inputs for the requested dates are no longer present, even though the processed summary for those same dates still exists.",
+  "requested_date": "2026-06-15",
+  "time_pressure": "An audit needs the earlier month reproduced.",
+  "title": "A promised replay of an earlier station feed fails, though its processed summary still exists"
+}

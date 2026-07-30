@@ -1,0 +1,13 @@
+{
+  "affected_product": "daily service-date processing",
+  "evidence_origin": "metropulse_deterministic_simulator",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values produced by a deterministic local simulator, not a real transit agency, a real incident, or a production engine's measurements.",
+  "incident_id": "MP-18",
+  "observed": {
+    "queued_before_processing": "tens of thousands of work-items",
+    "work_per_item": "almost none"
+  },
+  "reported_symptom": "For a single service date the scheduler's metadata store and its run queue filled with tens of thousands of tiny queued work-items before any data processing started. Each queued work-item, once it runs, does almost no work.",
+  "time_pressure": "The service-date run is blocking the daily publish window.",
+  "title": "Before any data is processed, the scheduler's store and queue are swamped for one service date"
+}

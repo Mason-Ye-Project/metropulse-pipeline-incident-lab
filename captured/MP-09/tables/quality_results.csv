@@ -1,0 +1,3 @@
+check_id,scope_key,dimension,expected,actual,status
+MP-09-CONTROL-001,all,control_consistency,every expected delivery is present (expected = received + quarantined),3 of 4 expected deliveries present,FAIL
+MP-09-COVERAGE-001,all,coverage,12 stations covered across every zone,9 stations covered; a zone is absent,FAIL

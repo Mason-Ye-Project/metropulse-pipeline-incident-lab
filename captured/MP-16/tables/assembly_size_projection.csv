@@ -1,0 +1,2 @@
+approach,projected_rows,bytes_per_row,projected_bytes,byte_limit,over_limit,distinct_station_keys_referenced
+whole_lookup_one_worker,3000000,48,144000000,8388608,1,12

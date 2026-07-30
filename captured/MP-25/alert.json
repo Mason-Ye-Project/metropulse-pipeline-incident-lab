@@ -1,0 +1,13 @@
+{
+  "affected_product": "ridership_target_db",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values produced by a deterministic simulator, not a real transit agency or a real incident.",
+  "incident_id": "MP-25",
+  "missing_event_count": 6,
+  "missing_window": [
+    "2026-04-15T10:05:00Z",
+    "2026-04-15T10:30:00Z"
+  ],
+  "reported_symptom": "After the target database was restored from an earlier snapshot, a run of ridership events is permanently missing from it. The feed reports it continued without interruption, yet the target never received the events for that window.",
+  "time_pressure": "A ridership total for the affected hour is due.",
+  "title": "After the target database was restored, half an hour of ridership is permanently missing"
+}

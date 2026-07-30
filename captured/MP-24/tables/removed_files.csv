@@ -1,0 +1,4 @@
+object_id,removed_at_seq,was_being_written,part_of_partition
+OBJ-part-leftover,3,0,0
+OBJ-part-previous,4,0,1
+OBJ-part-new,5,1,1

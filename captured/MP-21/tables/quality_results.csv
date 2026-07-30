@@ -1,0 +1,3 @@
+check_id,scope_key,dimension,expected,actual,status
+MP-21-RESOLVE-001,all,object_readability,a reader opening the published version resolves every referenced object,1 referenced object(s) could not be opened,FAIL
+MP-21-VISIBILITY-001,all,control_consistency,a version reported published has every referenced object readable,the published version references an object that is not readable,FAIL

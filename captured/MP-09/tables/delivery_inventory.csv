@@ -1,0 +1,5 @@
+delivery_id,zone_code,route_id,expected,received,checksum_valid
+PART_1,Z-CENTRAL,R1,yes,yes,yes
+PART_2,Z-NORTH,R2,yes,yes,yes
+PART_3,Z-EAST,R3,yes,yes,yes
+PART_4,Z-WEST,R4,yes,no,n/a

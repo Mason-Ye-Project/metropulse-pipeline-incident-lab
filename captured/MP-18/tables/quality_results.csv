@@ -1,0 +1,3 @@
+check_id,scope_key,dimension,expected,actual,status
+MP-18-QUEUE-001,all,scan_work,the scheduler queue admits at most 512 work-items,the fine manifest would queue 51840 work-items and was rejected,FAIL
+MP-18-WORKITEMS-001,all,valid_domain,projected work-items for one service date stay within 512,the fine grain projects 51840 work-items for one service date,FAIL

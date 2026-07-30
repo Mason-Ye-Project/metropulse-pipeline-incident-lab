@@ -1,0 +1,2 @@
+object_name,object_bytes,producer_declared_bytes,records_readable,producer_declared_records,last_record_sequence_readable,producer_last_sequence,integrity_check
+stop_event_batch_02_00,360,408,19,24,19,24,FAIL

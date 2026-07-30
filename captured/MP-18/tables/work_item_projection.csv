@@ -1,0 +1,2 @@
+grain,projected_work_items,admission_budget,admitted_work_items,queue_depth,coarse_partitions
+one work-item per station-minute-metric,51840,512,0,51840,4

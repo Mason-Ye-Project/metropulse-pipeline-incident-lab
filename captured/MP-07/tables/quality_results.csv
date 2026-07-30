@@ -1,0 +1,3 @@
+check_id,scope_key,dimension,expected,actual,status
+MP-07-CONTROL-001,all,control_consistency,the run's write partition equals the requested service day,the run's write partition is a different service day than requested,FAIL
+MP-07-TARGET-001,all,correctness,requested service day 2026-04-14 is refreshed,service day 2026-04-13 was refreshed instead,FAIL

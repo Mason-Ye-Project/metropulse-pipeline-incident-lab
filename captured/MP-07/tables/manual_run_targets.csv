@@ -1,0 +1,2 @@
+scheduler_run_id,requested_service_date,refreshed_service_date,read_window_start,read_window_end,read_path,write_path
+SR-mp07-manual-0001,2026-04-14,2026-04-13,2026-04-13,2026-04-14,landing/route_day/service_date=2026-04-13,warehouse/mart_route_day/service_date=2026-04-13

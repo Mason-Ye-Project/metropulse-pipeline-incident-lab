@@ -1,0 +1,3 @@
+check_id,scope_key,dimension,expected,actual,status
+MP-13-ENV-001,all,control_consistency,both runners use the same component builds,1 component build(s) differ between the two runners (stampkit),FAIL
+MP-13-PARSE-001,all,correctness,the same input reads to the same instant as the reference build,4 of 4 input rows read to a different instant,FAIL

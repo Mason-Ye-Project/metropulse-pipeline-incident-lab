@@ -1,0 +1,31 @@
+{
+  "expected": [
+    {
+      "checksum": "a9f659997fab9e338e14851b3a541871f0ab767b207b24567a316bbb8d57318b",
+      "delivery_id": "PART_1",
+      "route_id": "R1",
+      "zone_code": "Z-CENTRAL"
+    },
+    {
+      "checksum": "af394e0984917e17c49f2b777d8f8cd8a8e44bdf37213a48348d4af86a486d0c",
+      "delivery_id": "PART_2",
+      "route_id": "R2",
+      "zone_code": "Z-NORTH"
+    },
+    {
+      "checksum": "30b38da76e10d591bcdf8cf6d3890282e27baee596e26d2eb054f0e5076d2516",
+      "delivery_id": "PART_3",
+      "route_id": "R3",
+      "zone_code": "Z-EAST"
+    },
+    {
+      "checksum": "e24a87e4af4cde30bb247cb10e533fe8da205c05c23f590872a70260b7e8b267",
+      "delivery_id": "PART_4",
+      "route_id": "R4",
+      "zone_code": "Z-WEST"
+    }
+  ],
+  "note": "Four expected station-feed parts. Withholding the west part leaves every delivered file valid but the batch short one part.",
+  "service_date": "2026-04-15",
+  "west_delivery": "PART_4"
+}

@@ -1,0 +1,4 @@
+service_date,source_rows,warehouse_rows,gap
+2026-04-13,4,4,0
+2026-04-14,3,4,-1
+2026-04-15,4,0,4

@@ -1,0 +1,3 @@
+check_id,scope_key,dimension,expected,actual,status
+MP-17-REQUESTS-001,all,published_metric,lookup requests bounded by the distinct-key budget of 12,216 lookup requests were issued for 216 event rows,FAIL
+MP-17-WORKUNITS-001,all,scan_work,at most one request per distinct station key,18 requests per distinct station key (216 requests / 12 distinct keys),FAIL

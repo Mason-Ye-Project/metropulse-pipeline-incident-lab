@@ -1,0 +1,3 @@
+check_id,scope_key,dimension,expected,actual,status
+MP-19-SNAPSHOT-001,all,scan_work,saved-snapshot bytes plateau after the expected window,saved-snapshot bytes keep growing (net growth 5632 bytes),FAIL
+MP-19-STORESIZE-001,all,published_metric,the retained store stays within 2048 bytes at a flat input rate,the retained store reaches 6144 bytes,FAIL

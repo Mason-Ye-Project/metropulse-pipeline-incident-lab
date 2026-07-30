@@ -1,0 +1,52 @@
+[
+  {
+    "component": "receive",
+    "event_type": "raw_loaded",
+    "fields": {
+      "tables": {
+        "raw_gate_count_event": 216,
+        "raw_route_change": 0,
+        "raw_route_registry": 4,
+        "raw_scheduled_trip": 24,
+        "raw_service_alert": 0,
+        "raw_station_registry": 12,
+        "raw_stop_event": 72,
+        "raw_stop_plan": 72,
+        "raw_vehicle_position": 0,
+        "raw_vehicle_telemetry": 216
+      }
+    },
+    "logical_time": "2026-04-13T00:01:00Z"
+  },
+  {
+    "component": "stage",
+    "event_type": "staging_built",
+    "fields": {
+      "tables": {
+        "stg_gate_count_event": 216,
+        "stg_scheduled_trip": 24,
+        "stg_stop_event": 72,
+        "stg_vehicle_telemetry": 216
+      }
+    },
+    "logical_time": "2026-04-13T00:02:00Z"
+  },
+  {
+    "component": "model",
+    "event_type": "warehouse_built",
+    "fields": {
+      "counter_delta_rows": 216
+    },
+    "logical_time": "2026-04-13T00:03:00Z"
+  },
+  {
+    "component": "publish",
+    "event_type": "publication_committed",
+    "fields": {
+      "mart_route_day": 24,
+      "mart_route_hour_ridership": 72,
+      "publication_id": "PUB-run-mp19-0001-baseline"
+    },
+    "logical_time": "2026-04-13T00:04:00Z"
+  }
+]

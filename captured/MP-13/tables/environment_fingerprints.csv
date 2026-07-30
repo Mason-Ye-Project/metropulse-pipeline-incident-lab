@@ -1,0 +1,7 @@
+environment_id,component_name,build_fingerprint
+env_fresh_runner,gridcsv,gc090-1122aa
+env_fresh_runner,metrocore,mc231-4f1a9e
+env_fresh_runner,stampkit,sk150-9d3e11
+env_reference,gridcsv,gc090-1122aa
+env_reference,metrocore,mc231-4f1a9e
+env_reference,stampkit,sk142-7b0c2d

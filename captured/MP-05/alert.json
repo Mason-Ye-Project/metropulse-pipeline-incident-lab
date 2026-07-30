@@ -1,0 +1,8 @@
+{
+  "affected_product": "mp05_vehicle_position",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values, not a real transit agency or a real incident.",
+  "incident_id": "MP-05",
+  "reported_symptom": "A batch of vehicle positions carries timestamps that fall far outside the valid window; they resolve to a date long before the service ever existed. The raw values are all present, are numeric, and were accepted by the parser without error, so the batch covers none of the expected operating days.",
+  "time_pressure": "Live vehicle-position coverage feeds an operations view.",
+  "title": "A batch of vehicle-position timestamps resolves to a date long before the service existed, though the raw values parse cleanly"
+}

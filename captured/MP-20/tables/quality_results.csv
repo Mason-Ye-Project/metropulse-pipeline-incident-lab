@@ -1,0 +1,3 @@
+check_id,scope_key,dimension,expected,actual,status
+MP-20-PROFILE-001,all,scan_work,the recorded size profile matches the current row count,the recorded size profile predates the bulk load,FAIL
+MP-20-SIZEERROR-001,all,published_metric,the recorded size of the load table is within 2x of actual,recorded 24 rows while the table holds 6000 rows,FAIL

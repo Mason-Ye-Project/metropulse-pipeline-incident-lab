@@ -1,0 +1,4 @@
+step,progress_marker,marker_in_accepted_range,rows_selected
+1,2026-04-13T09:00:00Z,yes,4
+2,(outside accepted range),no,4
+3,(outside accepted range),no,0

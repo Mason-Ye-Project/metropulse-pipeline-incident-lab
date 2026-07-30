@@ -1,0 +1,28 @@
+{
+  "description": "MetroPulse synthetic operating-day bucketing fixture. The local-offset periods mirror an Australia/Sydney-style daylight schedule but are checked-in lab values, NOT a live time-zone database and NOT a real city incident. The pure-Python bucket function reads these offsets; it never consults the host time zone or session settings.",
+  "zone_label": "MetroPulse Harbor local",
+  "operating_day_cutoff_seconds": 10800,
+  "offset_periods": [
+    {"from_utc": "0001-01-01T00:00:00Z", "to_utc": "2026-04-04T16:00:00Z", "offset_seconds": 39600, "label": "daylight"},
+    {"from_utc": "2026-04-04T16:00:00Z", "to_utc": "2026-10-03T16:00:00Z", "offset_seconds": 36000, "label": "standard"},
+    {"from_utc": "2026-10-03T16:00:00Z", "to_utc": "9999-12-31T00:00:00Z", "offset_seconds": 39600, "label": "daylight"}
+  ],
+  "readings": [
+    {"reading_id": "GR_N1", "station_id": "STN_001", "observed_at_utc": "2026-04-12T14:30:00Z", "passenger_count": 5},
+    {"reading_id": "GR_N2", "station_id": "STN_002", "observed_at_utc": "2026-04-12T15:45:00Z", "passenger_count": 4},
+    {"reading_id": "GR_N3", "station_id": "STN_001", "observed_at_utc": "2026-04-12T18:15:00Z", "passenger_count": 6},
+    {"reading_id": "GR_N4", "station_id": "STN_003", "observed_at_utc": "2026-04-12T20:45:00Z", "passenger_count": 3},
+    {"reading_id": "GR_N5", "station_id": "STN_002", "observed_at_utc": "2026-04-13T02:45:00Z", "passenger_count": 7},
+    {"reading_id": "GR_D1", "station_id": "STN_004", "observed_at_utc": "2026-04-04T14:30:00Z", "passenger_count": 5},
+    {"reading_id": "GR_D2", "station_id": "STN_005", "observed_at_utc": "2026-04-04T15:45:00Z", "passenger_count": 6},
+    {"reading_id": "GR_D3", "station_id": "STN_004", "observed_at_utc": "2026-04-04T17:15:00Z", "passenger_count": 4},
+    {"reading_id": "GR_D4", "station_id": "STN_006", "observed_at_utc": "2026-04-04T18:45:00Z", "passenger_count": 8},
+    {"reading_id": "GR_D5", "station_id": "STN_005", "observed_at_utc": "2026-04-04T20:15:00Z", "passenger_count": 3},
+    {"reading_id": "GR_D6", "station_id": "STN_004", "observed_at_utc": "2026-04-04T23:45:00Z", "passenger_count": 5},
+    {"reading_id": "GR_D7", "station_id": "STN_006", "observed_at_utc": "2026-04-05T01:15:00Z", "passenger_count": 6},
+    {"reading_id": "GR_B1", "station_id": "STN_007", "observed_at_utc": "2026-04-15T16:59:00Z", "passenger_count": 4},
+    {"reading_id": "GR_B2", "station_id": "STN_007", "observed_at_utc": "2026-04-15T17:00:00Z", "passenger_count": 5},
+    {"reading_id": "GR_F1", "station_id": "STN_008", "observed_at_utc": "2026-10-03T14:30:00Z", "passenger_count": 6},
+    {"reading_id": "GR_F2", "station_id": "STN_008", "observed_at_utc": "2026-10-03T18:00:00Z", "passenger_count": 5}
+  ]
+}

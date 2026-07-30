@@ -1,0 +1,13 @@
+station_id,registry_version,station_name,zone_code,active_flag
+STN_001,1,R1 Stop 1,Z1,1
+STN_002,1,R1 Stop 2,Z1,1
+STN_003,1,R1 Stop 3,Z1,1
+STN_004,1,R2 Stop 1,Z2,1
+STN_005,1,R2 Stop 2,Z2,1
+STN_006,1,R2 Stop 3,Z2,1
+STN_007,1,R3 Stop 1,Z3,1
+STN_008,1,R3 Stop 2,Z3,1
+STN_009,1,R3 Stop 3,Z3,1
+STN_010,1,R4 Stop 1,Z4,1
+STN_011,1,R4 Stop 2,Z4,1
+STN_012,1,R4 Stop 3,Z4,1

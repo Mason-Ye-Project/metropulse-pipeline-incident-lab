@@ -1,0 +1,14 @@
+{
+  "affected_product": "near-real-time window results",
+  "evidence_origin": "metropulse_deterministic_simulator",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values produced by a deterministic local simulator, not a real transit agency, a real incident, or a production engine's measurements.",
+  "incident_id": "MP-19",
+  "observed": {
+    "input_rate": "flat",
+    "restart": "slower each hour",
+    "store_size": "grows every hour"
+  },
+  "reported_symptom": "Events per minute are steady, yet the streaming job's memory footprint and the size of each saved snapshot grow every hour, and restarts take longer each time, until the job misses its freshness SLA.",
+  "time_pressure": "The job feeds a near-real-time arrivals board with an SLA.",
+  "title": "Event volume is flat, but the streaming job's footprint and restart time grow every hour"
+}

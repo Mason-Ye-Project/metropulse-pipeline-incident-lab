@@ -1,0 +1,4 @@
+check_id,scope_key,dimension,expected,actual,status
+MP-01-CONSERVATION-001,all,conservation,attributed boardings must not exceed the largest counter reading per session,13 sessions exceed the largest counter reading,FAIL
+MP-01-CONTROL-001,all,control_consistency,"a PUBLISHED, fully-committed ridership dataset must be reconciled",control plane reports success while the published metric is unreconciled,FAIL
+MP-01-RECON-001,all,reconciliation,route-hour boardings within tolerance of gate control,72 route-hours exceed tolerance,FAIL

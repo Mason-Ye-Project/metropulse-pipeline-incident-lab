@@ -1,0 +1,8 @@
+{
+  "affected_product": "mp02_station_gate_daily",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values, not a real transit agency or a real incident.",
+  "incident_id": "MP-02",
+  "reported_symptom": "After a filter was added to leave out maintenance devices, the daily station gate-count report returned no rows at all. The previous report had a full set of station-day rows. The query completed successfully with no error, and the underlying readings are all still present.",
+  "time_pressure": "A station operations summary is due at the next review.",
+  "title": "A station gate-count report returns zero rows after a maintenance-device filter is added, though the query runs without error"
+}

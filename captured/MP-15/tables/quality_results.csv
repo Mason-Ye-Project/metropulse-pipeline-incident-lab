@@ -1,0 +1,3 @@
+check_id,scope_key,dimension,expected,actual,status
+MP-15-SESSIONS-001,all,control_consistency,in-use sessions return to baseline (0) after the pass,5 of 5 sessions still in use; 5 left held open,FAIL
+MP-15-STALL-001,all,completeness,all 12 aggregate tasks complete,"0 completed, 7 timed out waiting for a session",FAIL

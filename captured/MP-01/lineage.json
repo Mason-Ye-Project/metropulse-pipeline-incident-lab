@@ -1,0 +1,10 @@
+[
+  {
+    "dataset_version_id": "DV-ridership-PUB-run-mp01-0001-baseline",
+    "upstream_version_id": "DV-counterdelta-PUB-run-mp01-0001-baseline"
+  },
+  {
+    "dataset_version_id": "DV-ridership-PUB-run-mp01-0001-faulty",
+    "upstream_version_id": "DV-counterdelta-PUB-run-mp01-0001-faulty"
+  }
+]

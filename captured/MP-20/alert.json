@@ -1,0 +1,15 @@
+{
+  "affected_product": "station-roster join",
+  "evidence_origin": "metropulse_deterministic_simulator",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values produced by a deterministic local simulator, not a real transit agency, a real incident, or a production engine's measurements.",
+  "incident_id": "MP-20",
+  "observed": {
+    "after_load": "minutes",
+    "before_load": "seconds",
+    "skew": "none",
+    "sql_and_indexes": "unchanged"
+  },
+  "reported_symptom": "A small station-roster join that used to return in seconds now takes minutes. This started right after a large load into the joined table. The inputs are not skewed and neither the SQL nor the indexes changed.",
+  "time_pressure": "The roster join backs an operations lookup used during service.",
+  "title": "A small station-roster join goes from seconds to minutes after a large load"
+}

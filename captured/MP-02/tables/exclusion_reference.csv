@@ -1,0 +1,4 @@
+entry_id,device_id,note
+1,GATE_DEV_MAINT_A,scheduled maintenance device
+2,GATE_DEV_MAINT_B,scheduled maintenance device
+3,,device awaiting registration

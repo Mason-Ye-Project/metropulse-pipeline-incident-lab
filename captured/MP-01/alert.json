@@ -1,0 +1,16 @@
+{
+  "affected_product": "mart_route_hour_ridership",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values, not a real transit agency or a real incident.",
+  "incident_id": "MP-01",
+  "reported_symptom": "An operations analyst opened the route-hour ridership report and found published boardings far above the independent station gate counts for the same route and hour. The daily pipeline reported success and the raw vehicle telemetry has no duplicate deliveries.",
+  "time_pressure": "A public ridership summary is due at the next service review.",
+  "title": "Published route-hour ridership reads several times the gate-count control",
+  "worst_observed": {
+    "gate_control": 12,
+    "published_boardings": 204,
+    "route_id": "R1",
+    "service_date": "2026-04-13",
+    "service_hour_utc": 18,
+    "times_gate_control": 17.0
+  }
+}

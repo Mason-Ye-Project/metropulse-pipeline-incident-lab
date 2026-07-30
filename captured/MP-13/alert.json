@@ -1,0 +1,15 @@
+{
+  "affected_product": "parsed event timestamps",
+  "fictional_notice": "MetroPulse is a fictional, synthetic city-transit system. These are lab values produced by a deterministic simulator, not a real transit agency or a real incident.",
+  "incident_id": "MP-13",
+  "observed": {
+    "components_differing": [
+      "stampkit"
+    ],
+    "input_rows": 4,
+    "rows_differing": 4
+  },
+  "reported_symptom": "An unchanged commit read the same input file to a different timestamp on a fresh runner. The fresh runner had a different build of a date-reading component than the approved runner, even though no code changed.",
+  "time_pressure": "Downstream service days shift until the runners agree.",
+  "title": "The same commit reads a different timestamp on a fresh runner"
+}
